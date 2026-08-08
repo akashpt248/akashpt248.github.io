@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 500">
+  <rect width="800" height="500" fill="#131313"/>
+  <defs>
+    <pattern id="grid" width="40" height="40" patternUnits="userSpaceOnUse">
+      <path d="M 40 0 L 0 0 0 40" fill="none" stroke="#232323" stroke-width="1"/>
+    </pattern>
+  </defs>
+  <rect width="800" height="500" fill="url(#grid)"/>
+  <text x="400" y="258" font-family="JetBrains Mono, monospace" font-size="15" letter-spacing="2" fill="#5c5c59" text-anchor="middle">PROJECT SCREENSHOT</text>
+  <text x="400" y="280" font-family="JetBrains Mono, monospace" font-size="12" letter-spacing="1" fill="#3a3a3a" text-anchor="middle">1600 × 1000 — replace with real image</text>
+</svg>

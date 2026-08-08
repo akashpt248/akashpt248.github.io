@@ -1,0 +1,495 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Akash P T — Full Stack Developer</title>
+<meta name="description" content="Akash P T is a full stack developer building scalable web applications, dashboards, CRM/LMS platforms, APIs, and mobile products with PHP, React, and MySQL.">
+<meta name="theme-color" content="#0a0a0a">
+
+<!-- Open Graph -->
+<meta property="og:type" content="website">
+<meta property="og:title" content="Akash P T — Full Stack Developer">
+<meta property="og:description" content="Building scalable web applications, dashboards, and digital products.">
+<meta property="og:image" content="assets/og-cover.png">
+
+<link rel="icon" type="image/svg+xml" href="assets/favicon.svg">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<!-- Build progress line -->
+<div class="build-line" aria-hidden="true"><div class="build-line__fill" id="buildFill"></div></div>
+
+<!-- ============ NAV ============ -->
+<header class="nav" id="nav">
+  <div class="nav__inner">
+    <a href="#top" class="nav__logo">AKASH<span class="nav__logo-dot">·</span>PT</a>
+
+    <nav class="nav__links" id="navLinks">
+      <a href="#about" class="nav__link"><span class="nav__link-index">01</span>About</a>
+      <a href="#skills" class="nav__link"><span class="nav__link-index">02</span>Skills</a>
+      <a href="#experience" class="nav__link"><span class="nav__link-index">03</span>Experience</a>
+      <a href="#projects" class="nav__link"><span class="nav__link-index">04</span>Projects</a>
+      <a href="#contact" class="nav__link"><span class="nav__link-index">05</span>Contact</a>
+    </nav>
+
+    <div class="nav__actions">
+      <a href="assets/Akash-PT-Resume.pdf" class="btn btn--ghost btn--sm" download>Resume</a>
+      <button class="nav__burger" id="navBurger" aria-label="Toggle menu" aria-expanded="false" aria-controls="navLinks">
+        <span></span><span></span>
+      </button>
+    </div>
+  </div>
+</header>
+
+<main id="top">
+
+  <!-- ============ HERO ============ -->
+  <section class="hero">
+    <div class="hero__bg" aria-hidden="true">
+      <svg class="hero__grid" viewBox="0 0 1200 800" preserveAspectRatio="none">
+        <defs>
+          <pattern id="gridPattern" width="60" height="60" patternUnits="userSpaceOnUse">
+            <path d="M 60 0 L 0 0 0 60" fill="none" stroke="rgba(255,255,255,0.045)" stroke-width="1"/>
+          </pattern>
+        </defs>
+        <rect width="1200" height="800" fill="url(#gridPattern)"/>
+      </svg>
+    </div>
+
+    <div class="wrap hero__inner">
+      <p class="eyebrow reveal">
+        <span class="status-dot" aria-hidden="true"></span>
+        <span class="mono">STATUS: OPEN TO WORK</span>
+      </p>
+
+      <h1 class="hero__title">
+        <span class="reveal reveal--1">Akash&nbsp;P&nbsp;T</span>
+        <span class="hero__title-sub reveal reveal--2">Full&nbsp;Stack&nbsp;Developer<span class="hero__cursor" aria-hidden="true">_</span></span>
+      </h1>
+
+      <p class="hero__statement reveal reveal--3">
+        I design and build scalable web applications, admin systems, and digital
+        products end&#8209;to&#8209;end — from database schema to shipped interface —
+        for teams that need software that holds up in production.
+      </p>
+
+      <div class="hero__actions reveal reveal--4">
+        <a href="#projects" class="btn btn--primary">View Projects</a>
+        <a href="assets/Akash-PT-Resume.pdf" class="btn btn--ghost" download>Download Resume</a>
+      </div>
+
+      <div class="hero__social reveal reveal--4">
+        <a href="https://github.com/akashpt248" class="social-link" target="_blank" rel="noopener">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 .5C5.73.5.75 5.48.75 11.75c0 5.02 3.26 9.28 7.78 10.78.57.1.78-.25.78-.55 0-.27-.01-1.16-.02-2.11-3.17.69-3.84-1.34-3.84-1.34-.52-1.32-1.27-1.67-1.27-1.67-1.04-.71.08-.7.08-.7 1.15.08 1.75 1.18 1.75 1.18 1.02 1.75 2.67 1.24 3.32.95.1-.74.4-1.24.72-1.53-2.53-.29-5.19-1.27-5.19-5.63 0-1.24.44-2.26 1.17-3.06-.12-.29-.51-1.45.11-3.02 0 0 .96-.31 3.14 1.17.91-.25 1.89-.38 2.86-.38.97 0 1.95.13 2.86.38 2.18-1.48 3.14-1.17 3.14-1.17.62 1.57.23 2.73.11 3.02.73.8 1.17 1.82 1.17 3.06 0 4.37-2.66 5.34-5.2 5.62.41.36.77 1.06.77 2.14 0 1.55-.01 2.79-.01 3.17 0 .3.2.66.79.55A11.27 11.27 0 0 0 23.25 11.75C23.25 5.48 18.27.5 12 .5Z"/></svg>
+          GitHub
+        </a>
+        <a href="https://linkedin.com/in/akash-pt-932567276" class="social-link" target="_blank" rel="noopener">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M20.45 20.45h-3.55v-5.57c0-1.33-.02-3.03-1.85-3.03-1.85 0-2.14 1.45-2.14 2.94v5.66H9.36V9h3.41v1.56h.05c.47-.9 1.63-1.85 3.36-1.85 3.6 0 4.27 2.37 4.27 5.45v6.29ZM5.34 7.43a2.06 2.06 0 1 1 0-4.12 2.06 2.06 0 0 1 0 4.12ZM7.11 20.45H3.56V9h3.55v11.45Z"/></svg>
+          LinkedIn
+        </a>
+      </div>
+    </div>
+
+    <div class="hero__scroll-cue" aria-hidden="true"><span></span></div>
+  </section>
+
+  <!-- ============ ABOUT ============ -->
+  <section class="section" id="about">
+    <div class="wrap">
+      <p class="section-eyebrow reveal">About</p>
+      <div class="about-grid">
+        <div class="about-grid__col reveal">
+          <h2 class="section-title">Software that behaves&nbsp;correctly, reads clearly, and ships&nbsp;on&nbsp;time.</h2>
+        </div>
+        <div class="about-grid__col reveal">
+          <p class="about-text">
+            I'm a full stack developer working across the entire product lifecycle —
+            schema design, backend logic, REST APIs, and the interfaces people
+            actually use every day. My work spans admin dashboards, CMS platforms,
+            LMS systems, e‑commerce applications, and mobile apps, usually for
+            operational teams who need reliable systems more than they need
+            flashy ones.
+          </p>
+          <p class="about-text">
+            I care about the parts of an application most users never see: clean
+            data models, predictable state, audit trails that hold up, and code
+            that the next developer can actually read. I'm comfortable owning a
+            project from architecture document to production deployment.
+          </p>
+
+          <div class="stat-row">
+            <div class="stat">
+              <span class="stat__value mono">20+</span>
+              <span class="stat__label">Projects shipped</span>
+            </div>
+            <div class="stat">
+              <span class="stat__value mono">10+</span>
+              <span class="stat__label">Core technologies</span>
+            </div>
+            <div class="stat">
+              <span class="stat__value mono">2+</span>
+              <span class="stat__label">Years building software</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ SKILLS ============ -->
+  <section class="section section--alt" id="skills">
+    <div class="wrap">
+      <p class="section-eyebrow reveal">Skills</p>
+      <h2 class="section-title reveal">Tools I reach for</h2>
+
+      <div class="skills-grid">
+        <div class="skill-card reveal">
+          <span class="skill-card__label mono">Frontend</span>
+          <ul class="skill-card__list">
+            <li>HTML5</li><li>CSS3</li><li>JavaScript</li><li>React</li>
+          </ul>
+        </div>
+        <div class="skill-card reveal">
+          <span class="skill-card__label mono">Backend</span>
+          <ul class="skill-card__list">
+            <li>PHP</li><li>Laravel</li><li>REST APIs</li>
+          </ul>
+        </div>
+        <div class="skill-card reveal">
+          <span class="skill-card__label mono">Database</span>
+          <ul class="skill-card__list">
+            <li>MySQL</li><li>Schema Design</li>
+          </ul>
+        </div>
+        <div class="skill-card reveal">
+          <span class="skill-card__label mono">Mobile</span>
+          <ul class="skill-card__list">
+            <li>Flutter</li><li>Dart</li>
+          </ul>
+        </div>
+        <div class="skill-card reveal">
+          <span class="skill-card__label mono">Tools</span>
+          <ul class="skill-card__list">
+            <li>Git</li><li>GitHub</li><li>VS&nbsp;Code</li><li>Postman</li>
+          </ul>
+        </div>
+        <div class="skill-card reveal">
+          <span class="skill-card__label mono">Other</span>
+          <ul class="skill-card__list">
+            <li>jQuery</li><li>DataTables</li><li>mPDF</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ EXPERIENCE ============ -->
+  <section class="section" id="experience">
+    <div class="wrap">
+      <p class="section-eyebrow reveal">Experience</p>
+      <h2 class="section-title reveal">Where I've worked</h2>
+
+      <div class="timeline">
+        <div class="timeline__item reveal">
+          <div class="timeline__period mono">2024 — Present</div>
+          <div class="timeline__body">
+            <h3 class="timeline__role">Full Stack Developer</h3>
+            <p class="timeline__company">
+XpertConsortium Technologies LLP</p>
+            <p class="timeline__desc">
+              Architected and built a field service &amp; after‑sales CRM platform
+              from the ground up — job assignment, technician tracking, PDF
+              reporting, and a customer‑facing analytics dashboard used daily
+              by operations staff.
+            </p>
+            <div class="timeline__tags">
+              <span class="tag">PHP</span><span class="tag">MySQL</span><span class="tag">jQuery</span><span class="tag">Bootstrap</span><span class="tag">mPDF</span>
+            </div>
+          </div>
+        </div>
+
+      
+
+       
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ PROJECTS ============ -->
+  <section class="section section--alt" id="projects">
+    <div class="wrap wrap--full">
+      <div class="wrap">
+        <p class="section-eyebrow reveal">Featured Projects</p>
+        <div class="section-head-row reveal">
+          <h2 class="section-title">Selected work</h2>
+          <div class="slider-controls">
+            <button class="slider-btn" id="prevProject" aria-label="Previous project">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M15 18l-6-6 6-6"/></svg>
+            </button>
+            <span class="slider-count mono"><span id="slideCurrent">01</span> / <span id="slideTotal">06</span></span>
+            <button class="slider-btn" id="nextProject" aria-label="Next project">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M9 6l6 6-6 6"/></svg>
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <div class="project-slider reveal" id="projectSlider">
+        <div class="project-track" id="projectTrack">
+
+          <article class="project-card">
+            <div class="project-card__media">
+              <img src="assets/placeholder-project.svg" alt="Screenshot placeholder for Helios CRM" loading="lazy">
+            </div>
+            <div class="project-card__body">
+              <span class="project-card__index mono">01</span>
+              <h3 class="project-card__title">Helios — Solar Field Service CRM</h3>
+              <p class="project-card__desc">
+                A full after‑sales CRM for a solar EPC company: job assignment,
+                technician tracking, commissioning workflows, and PDF report
+                generation, replacing a manual, spreadsheet‑driven process.
+              </p>
+              <ul class="project-card__features">
+                <li>Admin job creation, assignment &amp; status audit trail</li>
+                <li>Auto‑generated mPDF installation &amp; maintenance reports</li>
+                <li>Technician mobile interface with GPS self‑assign for field jobs</li>
+              </ul>
+              <div class="timeline__tags">
+                <span class="tag">PHP</span><span class="tag">MySQL</span><span class="tag">jQuery</span><span class="tag">mPDF</span>
+              </div>
+              <a href="#" class="project-card__link">View case study &nbsp;→</a>
+            </div>
+          </article>
+
+          <article class="project-card">
+            <div class="project-card__media">
+              <img src="assets/placeholder-project.svg" alt="Screenshot placeholder for LMS platform" loading="lazy">
+            </div>
+            <div class="project-card__body">
+              <span class="project-card__index mono">02</span>
+              <h3 class="project-card__title">Coursework — Learning Management System</h3>
+              <p class="project-card__desc">
+                A lightweight LMS for small institutions to manage courses,
+                assignments, and student progress without the overhead of a
+                full enterprise platform.
+              </p>
+              <ul class="project-card__features">
+                <li>Role‑based access for admins, instructors, and students</li>
+                <li>Assignment submission &amp; grading workflow</li>
+                <li>Progress dashboards per course and per student</li>
+              </ul>
+              <div class="timeline__tags">
+                <span class="tag">PHP</span><span class="tag">MySQL</span><span class="tag">Bootstrap</span>
+              </div>
+              <a href="#" class="project-card__link">View case study &nbsp;→</a>
+            </div>
+          </article>
+
+          <article class="project-card">
+            <div class="project-card__media">
+              <img src="assets/placeholder-project.svg" alt="Screenshot placeholder for CMS platform" loading="lazy">
+            </div>
+            <div class="project-card__body">
+              <span class="project-card__index mono">03</span>
+              <h3 class="project-card__title">Editorial — Headless CMS</h3>
+              <p class="project-card__desc">
+                A custom content platform for a publishing client, built to
+                give non‑technical editors full control without touching code.
+              </p>
+              <ul class="project-card__features">
+                <li>Drag‑and‑drop page builder with reusable blocks</li>
+                <li>Scheduled publishing &amp; revision history</li>
+                <li>REST API layer for a decoupled frontend</li>
+              </ul>
+              <div class="timeline__tags">
+                <span class="tag">PHP</span><span class="tag">Laravel</span><span class="tag">MySQL</span>
+              </div>
+              <a href="#" class="project-card__link">View case study &nbsp;→</a>
+            </div>
+          </article>
+
+          <article class="project-card">
+            <div class="project-card__media">
+              <img src="assets/placeholder-project.svg" alt="Screenshot placeholder for e-commerce application" loading="lazy">
+            </div>
+            <div class="project-card__body">
+              <span class="project-card__index mono">04</span>
+              <h3 class="project-card__title">Marketplace — E‑Commerce Storefront</h3>
+              <p class="project-card__desc">
+                A multi‑vendor storefront with inventory management, order
+                tracking, and a checkout flow built for reliability over
+                flashy features.
+              </p>
+              <ul class="project-card__features">
+                <li>Vendor‑scoped inventory and order dashboards</li>
+                <li>Coupon, tax, and shipping rule engine</li>
+                <li>Order status pipeline with customer notifications</li>
+              </ul>
+              <div class="timeline__tags">
+                <span class="tag">PHP</span><span class="tag">MySQL</span><span class="tag">JavaScript</span>
+              </div>
+              <a href="#" class="project-card__link">View case study &nbsp;→</a>
+            </div>
+          </article>
+
+          <article class="project-card">
+            <div class="project-card__media">
+              <img src="assets/placeholder-project.svg" alt="Screenshot placeholder for analytics dashboard" loading="lazy">
+            </div>
+            <div class="project-card__body">
+              <span class="project-card__index mono">05</span>
+              <h3 class="project-card__title">Pulse — Operations Analytics Dashboard</h3>
+              <p class="project-card__desc">
+                A real‑time analytics dashboard giving operations leads
+                visibility into job throughput, SLA compliance, and technician
+                performance.
+              </p>
+              <ul class="project-card__features">
+                <li>Configurable charts built on live MySQL queries</li>
+                <li>SLA breach alerts with drill‑down detail views</li>
+                <li>Exportable reports for weekly ops reviews</li>
+              </ul>
+              <div class="timeline__tags">
+                <span class="tag">PHP</span><span class="tag">MySQL</span><span class="tag">Chart.js</span>
+              </div>
+              <a href="#" class="project-card__link">View case study &nbsp;→</a>
+            </div>
+          </article>
+
+          <article class="project-card">
+            <div class="project-card__media">
+              <img src="assets/placeholder-project.svg" alt="Screenshot placeholder for mobile technician app" loading="lazy">
+            </div>
+            <div class="project-card__body">
+              <span class="project-card__index mono">06</span>
+              <h3 class="project-card__title">Fieldwork — Technician Mobile App</h3>
+              <p class="project-card__desc">
+                A cross‑platform mobile app for field technicians to receive
+                job assignments, log status changes, and submit reports from
+                site — even with unreliable connectivity.
+              </p>
+              <ul class="project-card__features">
+                <li>Offline‑first job queue with background sync</li>
+                <li>Photo capture and checklist‑based reporting</li>
+                <li>Push notifications for new assignments</li>
+              </ul>
+              <div class="timeline__tags">
+                <span class="tag">Flutter</span><span class="tag">Dart</span><span class="tag">REST API</span>
+              </div>
+              <a href="#" class="project-card__link">View case study &nbsp;→</a>
+            </div>
+          </article>
+
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ WHAT I DO ============ -->
+  <section class="section" id="services">
+    <div class="wrap">
+      <p class="section-eyebrow reveal">What I Do</p>
+      <h2 class="section-title reveal">Services</h2>
+
+      <div class="services-grid">
+        <div class="service reveal">
+          <h3 class="service__title">Full Stack Development</h3>
+          <p class="service__desc">End‑to‑end ownership from database schema through to a shipped, working interface.</p>
+        </div>
+        <div class="service reveal">
+          <h3 class="service__title">Web Application Development</h3>
+          <p class="service__desc">Custom web apps built for how a team actually works, not around a template.</p>
+        </div>
+        <div class="service reveal">
+          <h3 class="service__title">API Development</h3>
+          <p class="service__desc">Clean, documented REST APIs designed to be consumed by web and mobile clients alike.</p>
+        </div>
+        <div class="service reveal">
+          <h3 class="service__title">Admin Dashboard Development</h3>
+          <p class="service__desc">Operational dashboards that surface the right data without burying the user in noise.</p>
+        </div>
+        <div class="service reveal">
+          <h3 class="service__title">Mobile App Development</h3>
+          <p class="service__desc">Cross‑platform apps with Flutter, built to work reliably in the field, not just the demo.</p>
+        </div>
+        <div class="service reveal">
+          <h3 class="service__title">Database Design</h3>
+          <p class="service__desc">Normalized schemas and audit‑safe data models that hold up as a product grows.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ CONTACT ============ -->
+  <section class="section section--dark" id="contact">
+    <div class="wrap">
+      <p class="section-eyebrow reveal">Contact</p>
+      <h2 class="contact-statement reveal">Have a project in mind?<br>Let's build something meaningful.</h2>
+
+      <div class="contact-grid">
+        <div class="contact-links reveal">
+          <a href="mailto:akashpt248@gmail.com" class="contact-link">
+            <span class="contact-link__label mono">Email</span>
+            <span class="contact-link__value">akashpt248@gmail.com</span>
+          </a>
+          <a href="https://github.com/akashpt248" class="contact-link" target="_blank" rel="noopener">
+            <span class="contact-link__label mono">GitHub</span>
+            <span class="contact-link__value">github.com/akashpt248</span>
+          </a>
+          <a href="https://linkedin.com/in/akash-pt-932567276" class="contact-link" target="_blank" rel="noopener">
+            <span class="contact-link__label mono">LinkedIn</span>
+            <span class="contact-link__value">linkedin.com/akash-pt-932567276</span>
+          </a>
+        </div>
+
+        <form class="contact-form reveal" id="contactForm" novalidate>
+          <div class="form-field">
+            <label for="cf-name">Name</label>
+            <input type="text" id="cf-name" name="name" autocomplete="name" required>
+            <span class="form-error" id="err-name">Enter your name.</span>
+          </div>
+          <div class="form-field">
+            <label for="cf-email">Email</label>
+            <input type="email" id="cf-email" name="email" autocomplete="email" required>
+            <span class="form-error" id="err-email">Enter a valid email address.</span>
+          </div>
+          <div class="form-field">
+            <label for="cf-message">Message</label>
+            <textarea id="cf-message" name="message" rows="4" required></textarea>
+            <span class="form-error" id="err-message">Tell me a little about the project.</span>
+          </div>
+          <button type="submit" class="btn btn--primary btn--full">Send Message</button>
+          <p class="form-success" id="formSuccess" role="status">Thanks — your message is ready to send. I'll get back to you soon.</p>
+        </form>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<!-- ============ FOOTER ============ -->
+<footer class="footer">
+  <div class="wrap footer__inner">
+    <div class="footer__brand">
+      <span class="footer__name">Akash P T</span>
+      <span class="footer__role mono">Full Stack Developer</span>
+    </div>
+    <div class="footer__social">
+      <a href="https://github.com/akashpt248" target="_blank" rel="noopener">GitHub</a>
+      <a href="https://linkedin.com/in/akash-pt-932567276" target="_blank" rel="noopener">LinkedIn</a>
+      <a href="mailto:akashpt248@gmail.com">Email</a>
+    </div>
+    <p class="footer__copy mono">&copy; <span id="year"></span> Akash P T. All rights reserved.</p>
+  </div>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
